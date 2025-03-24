@@ -1,0 +1,23 @@
+a.button1{
+    color: #FFFFFF; /* белый цвет */
+    font-size: 24px; /* Размер текста */
+    text-align: center; /* Выравнивание по центру */
+    margin: 10px; /* Внешние отступы */
+    padding: 10px; /* Внутренние отступы */
+    background transparentl;
+}
+a.button1:hover {color : rgb(222,222,238);
+                    background transparent;
+                    color: orange;
+                }
+a.button1:active {background: rgb(205,205,230);}
+
+
+body {
+          background-image: url('catalyst.jpg'); /* Путь к вашей фотографии */
+          background-size: cover; /* Растягивает изображение на весь экран */
+          background-position: center; /* Центрирует изображение */
+          background-repeat: no-repeat; /* Запрещает повторение изображения */
+          height: 100vh; /* Высота на весь экран */
+          margin: 0; /* Убирает отступы по умолчанию */
+}
