@@ -1,147 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-
-</head>
-<body>
-
-</body>
-</html>
-<style>
-    .custom-text {
-      color: #FFFFFF; /* белый цвет */
-      font-size: 34px; /* размер текста */
-      text-align: center; /* выравнивание по центру */
-      margin: 10px; /* внешние отступы */
-      padding: 10px; /* внутренние отступы */
-    }
-</style>
-<p class="custom-text">Catalyst</p>
-<style>
-    .image-container {
-      position: relative; /* Контейнер для позиционирования текста */
-      display: inline-block; /* Чтобы контейнер занимал только место изображения */
-    }
-    .moveable-image {
-      width: 600px; /* Ширина изображения */
-      height: 300px; /* Высота изображения */
-    }
-    .overlay3-text {
-      position: absolute; /* Абсолютное позиционирование текста */
-      overflow: hidden; /* Скрывает текст, выходящий за пределы блока */
-      white-space: normal;
-      top: 50px; /* Отступ сверху */
-      left: 100px; /* Отступ слева */
-      width: 40%; /* Ширина текстового блока — половина изображения */
-      height: 100%;
-      color: white; /* Цвет текста */
-      font-size: 24px; /* Размер текста */
-    }
-</style>
-
-<div class="image-container">
-    <img class="moveable-image" src="361.png" alt="Фотография">
-    <div class="overlay3-text">A</div>
-</div>
-
-<style>
-    .image-container {
-      position: relative; /* для позиционирования текста */
-      display: inline-block; /* Чтобы  занимал только место изображения */
-    }
-    .moveable1-image {
-      width: 600px; /* Ширина изображения */
-      height: 300px; /* Высота изображения */
-    }
-    .overlay2-text {
-      position: absolute; /* Абсолютное позиционирование текста */
-      top: 50px; /* Отступ сверху */
-      left: 100px; /* Отступ слева */
-      width: 40%; /* Ширина текстового блока — половина изображения */
-      height: 100%;
-      color: white; /* Цвет текста */
-      font-size: 24px; /* Размер текста */
-    }
-</style>
-<div class="image-container">
-    <img class="moveable1-image" src="graf8b.jpg" alt="Фотография">
-    <div class="overlay2-text">b </div>
-</div>
-
-<style>
-    .image-container {
-      position: relative; /* Контейнер для позиционирования текста */
-      display: inline-block; /* Чтобы контейнер занимал только место изображения */
-    }
-    .moveable2-image {
-      width: 600px; /* Ширина изображения */
-      height: 300px; /* Высота изображения */
-    }
-    .overlay1-text {
-      position: absolute; /* Абсолютное позиционирование текста */
-      top: 50px; /* Отступ сверху */
-      left: 100px; /* Отступ слева */
-      width: 40%; /* Ширина текстового блока — половина изображения */
-      height: 100%;
-      color: white; /* Цвет текста */
-      font-size: 24px; /* Размер текста */
-    }
-</style>
-
-<div class="image-container">
-    <img class="moveable2-image" src="hend9.jpg" alt="Фотография">
-    <div class="overlay1-text">C</div>
-</div>
-
-<style>
-    .image-container {
-      position: relative; /* Контейнер для позиционирования текста */
-      display: inline-block; /* Чтобы контейнер занимал только место изображения */
-    }
-    .moveable-image {
-      width: 600px; /* Ширина изображения */
-      height: 300px; /* Высота изображения */
-    }
-    .overlay3-text {
-      position: absolute; /* Абсолютное позиционирование текста */
-      overflow: hidden; /* Скрывает текст, выходящий за пределы блока */
-      white-space: normal;
-      top: 50px; /* Отступ сверху */
-      left: 100px; /* Отступ слева */
-      width: 40%; /* Ширина текстового блока — половина изображения */
-      height: 100%;
-      color: white; /* Цвет текста */
-      font-size: 24px; /* Размер текста */
-    }
-</style>
-
-<div class="image-container">
-    <img class="moveable-image" src="361.png" alt="Фотография">
-    <div class="overlay3-text">d</div>
-</div>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фон страницы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Catalyst</title>
     <style>
         body {
-          background-image: url('catalyst.jpg'); /*фотка моя  */
-          background-size: cover; /*  изображение на весь экран */
-          background-position: center; /* Ценр */
-          height: 100vh; /* Высота на весь экран */
-          margin: 0; /* Убирает отступы по умолчанию */
+            background-image: url('catalyst.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
         }
-    </style>
-
-    <style>
+        
+        .custom-text {
+            color: #FFFFFF;
+            font-size: 34px;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        
         .custom1-text {
-          color: #FFFFFF; /* белый цвет */
-          font-size: 24px; /* Размер текста */
-          text-align: center; /* Выравнивание по центру */
-          margin: 10px; /* Внешние отступы */
-          padding: 10px; /* Внутренние отступы */
+            color: #FFFFFF;
+            font-size: 24px;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            display: block;
+        }
+        
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .moveable-image, 
+        .moveable1-image, 
+        .moveable2-image {
+            width: 600px;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .overlay1-text,
+        .overlay2-text,
+        .overlay3-text {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            width: 40%;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .overlay3-text {
+            overflow: hidden;
+            white-space: normal;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 100px);
         }
     </style>
-    <a class="custom1-text" href="index.html">Вернуться</a>
 </head>
+
+<body>
+    <p class="custom-text">Catalyst</p>
+    
+    <div class="content-wrapper">
+        <div class="image-container">
+            <img class="moveable-image" src="361.png" alt="Фотография">
+            <div class="overlay3-text">A</div>
+        </div>
+
+        <div class="image-container">
+            <img class="moveable1-image" src="graf8b.jpg" alt="Фотография">
+            <div class="overlay2-text">B</div>
+        </div>
+
+        <div class="image-container">
+            <img class="moveable2-image" src="hend9.jpg" alt="Фотография">
+            <div class="overlay1-text">C</div>
+        </div>
+
+        <div class="image-container">
+            <img class="moveable-image" src="361.png" alt="Фотография">
+            <div class="overlay3-text">D</div>
+        </div>
+    </div>
+    
+    <a class="custom1-text" href="index.html">Вернуться</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
