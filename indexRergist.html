@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обратная связь</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+    label {
+        margin-bottom: 5px;
+        color: #333333;
+    }
+    input, textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+    }
+    button {
+        padding: 10px;
+        background-color: #6c757d; /* Серый цвет */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+    button:hover {
+        background-color: #5a6268; /* Темнее при наведении */
+    }
+    .feedback {
+        color: red; /* Цвет сообщения об ошибке */
+        font-size: 12px; /* Размер шрифта для сообщения */
+        display: none; /* Скрыто по умолчанию */
+    }
+  </style>
+</head>
+<body>
+
+
+<form id="feedbackForm">
+  <label for="name">Имя:</label>
+  <span class="feedback" id="nameFeedback"></span>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Электронная почта:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="comment">Комментарий:</label>
+  <textarea id="comment" name="comment" rows="4" required></textarea>
+
+  <button type="submit">Отправить</button>
+</form>
+
+<script>
+  document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Предотвращаем отправку формы
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const nameFeedback = document.getElementById('nameFeedback');
+
+      // Проверка на пустое имя
+      if (name === '') {
+          nameFeedback.textContent = 'Имя не может быть пустым.';
+          nameFeedback.style.display = 'block'; // Показываем сообщение об ошибке
+          return;
+      } else {
+          nameFeedback.textContent = ''; // Сброс сообщения об ошибке
+          nameFeedback.style.display = 'none'; // Скрываем сообщение об ошибке
+      }
+
+      // Проверка на наличие символа '@' в электронной почте
+      if (!email.includes('@')) {
+          alert('Пожалуйста, введите корректный адрес электронной почты.');
+          return;
+      }
+
+      // Здесь можно добавить код для отправки данных на сервер или обработки формы
+      alert('Спасибо за ваш отзыв!');
+      this.reset(); // Сброс формы после успешной отправки
+  });
+</script>
+
+</body>
+</html>
